@@ -1,0 +1,42 @@
+# 🔴 Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# 🔴 Virtual environment
+.venv/
+venv/
+
+# 🔴 Data files (VERY IMPORTANT)
+data/
+*.csv
+*.txt
+
+# 🔴 Processed datasets
+*.processed.csv
+
+# 🔴 Model files (VERY LARGE)
+models/artifacts/
+*.pt
+*.pth
+*.joblib
+
+# 🔴 Logs / temp
+*.log
+
+# 🔴 OS files
+.DS_Store
+Thumbs.db
+
+# 🔴 IDE / editor files
+.vscode/
+.idea/
+
+# 🔴 Hidden project configs (optional)
+.claude/
+.godo/
+
+# 🔴 Python build files
+build/
+dist/
+*.egg-info/

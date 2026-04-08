@@ -1,0 +1,142 @@
+/* Dark “cockpit” theme for energy dashboard */
+:root {
+  --bg-deep: #0a0c10;
+  --bg-card: rgba(22, 26, 36, 0.85);
+  --border: rgba(148, 163, 184, 0.18);
+  --accent: #22d3ee;
+  --accent-2: #a78bfa;
+  --text: #e5e7eb;
+}
+
+.dash-body {
+  min-height: 100vh;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(34, 211, 238, 0.12), transparent),
+    radial-gradient(900px 500px at 100% 0%, rgba(167, 139, 250, 0.12), transparent),
+    linear-gradient(180deg, #07080c 0%, #0a0c10 40%, #07080c 100%);
+  color: var(--text);
+}
+
+.hero-strip {
+  background: linear-gradient(90deg, rgba(34, 211, 238, 0.15), rgba(167, 139, 250, 0.12));
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.hero-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+.hero-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #f8fafc;
+}
+
+.hero-sub {
+  color: #94a3b8;
+  max-width: 52ch;
+}
+
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+}
+
+.glass-alert {
+  background: rgba(30, 41, 59, 0.55) !important;
+  border: 1px solid var(--border) !important;
+  color: #e2e8f0 !important;
+}
+
+.btn-accent {
+  background: linear-gradient(90deg, #22d3ee, #38bdf8);
+  border: none;
+  color: #0b1220 !important;
+  font-weight: 600;
+}
+
+.btn-accent:hover {
+  filter: brightness(1.06);
+  color: #0b1220 !important;
+}
+
+.plot-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+}
+
+.plot-box {
+  height: 420px;
+}
+
+.plot-box-sm {
+  height: 320px;
+}
+
+.kpi-tile {
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.kpi-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #94a3b8;
+}
+
+.kpi-val {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f1f5f9;
+}
+
+.kpi-sub {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.preview-wrap table {
+  font-size: 0.85rem;
+}
+
+.llm-box {
+  white-space: pre-wrap;
+  background: #0b1020;
+  color: #e6e6f0;
+  border-radius: 12px;
+  padding: 14px;
+  min-height: 140px;
+  font-size: 0.92rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.spinner-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner-box {
+  background: #111827;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 22px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  color: #e5e7eb;
+}
