@@ -10,7 +10,7 @@ venv/
 # 🔴 Data files (VERY IMPORTANT)
 data/
 *.csv
-*.txt
+#*.txt
 
 # 🔴 Processed datasets
 *.processed.csv
